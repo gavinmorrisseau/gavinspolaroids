@@ -7,6 +7,8 @@
   font-size: 6rem;
   width: 177px;
   margin: -8px auto 0;
+  src: url(assets/fonts/FontsFree-Net-Astronout-1.ttf);
+  
 }.u-section-2 .u-sheet-1 {
   min-height: 992px;
 }
@@ -27,7 +29,7 @@
 .u-section-2 .u-image-1 {
   width: 347px;
   height: 347px;
-  background-image: url("images/GAVIN1CROPPED.png");
+  background-image: url("assets/images/GAVIN1CROPPED.png");
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -346,5 +348,5 @@
   font-family: 'FontsFree-Net-Astronout-1';
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/FontsFree-Net-Astronout-1.ttf);
+  src: url(assets/fonts/FontsFree-Net-Astronout-1.ttf);
 }
