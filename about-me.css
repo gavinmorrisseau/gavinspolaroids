@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .u-section-1 .u-sheet-1 {
   min-height: 145px;
 }
@@ -8,7 +13,8 @@
   width: 177px;
   margin: -8px auto 0;
   src: url(assets/fonts/FontsFree-Net-Astronout-1.ttf);
-}.u-section-2 .u-sheet-1 {
+}
+.u-section-2 .u-sheet-1 {
   min-height: 605px;
 }
 
@@ -172,7 +178,8 @@
     margin-left: 8px;
     margin-right: 8px;
   }
-}.u-section-3 {
+}
+.u-section-3 {
   background-image: none;
 }
 
@@ -315,8 +322,9 @@
   .u-section-3 .u-social-icons-1 {
     margin-top: -15px;
   }
-}@font-face {
-  font-family: 'FontsFree-Net-Astronout-1';
+}
+@font-face {
+  font-family: "FontsFree-Net-Astronout-1";
   font-style: normal;
   font-weight: 400;
   src: url(assets/fonts/FontsFree-Net-Astronout-1.ttf);

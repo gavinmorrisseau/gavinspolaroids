@@ -8,8 +8,8 @@
   width: 177px;
   margin: -8px auto 0;
   src: url(assets/fonts/FontsFree-Net-Astronout-3.ttf);
-  
-}.u-section-2 .u-sheet-1 {
+}
+.u-section-2 .u-sheet-1 {
   min-height: 676px;
 }
 
@@ -20,8 +20,9 @@
 
 .u-section-2 .u-text-2 {
   margin: -25px auto 60px;
-}@font-face {
-  font-family: 'FontsFree-Net-Astronout-3';
+}
+@font-face {
+  font-family: "FontsFree-Net-Astronout-3";
   font-style: normal;
   font-weight: 400;
   src: url(assets/fonts/FontsFree-Net-Astronout-3.ttf);

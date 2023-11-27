@@ -8,7 +8,8 @@
   width: 177px;
   margin: -8px auto 0;
   src: url(assets/fonts/FontsFree-Net-Astronout.ttf);
-}.u-section-2 {
+}
+.u-section-2 {
   background-image: none;
 }
 
@@ -52,7 +53,8 @@
   .u-section-2 .u-text-2 {
     margin-right: 0;
   }
-}.u-section-3 {
+}
+.u-section-3 {
   background-image: none;
 }
 
@@ -208,7 +210,8 @@
     min-height: 257px;
     height: 257px;
   }
-}.u-section-4 {
+}
+.u-section-4 {
   background-image: none;
 }
 
@@ -372,7 +375,8 @@
     margin-top: 15px;
     margin-right: 199px;
   }
-}.u-section-5 {
+}
+.u-section-5 {
   background-image: none;
 }
 
@@ -546,7 +550,8 @@
     margin-top: 15px;
     margin-bottom: -18px;
   }
-}.u-section-6 {
+}
+.u-section-6 {
   background-image: none;
 }
 
@@ -617,8 +622,9 @@
   .u-section-6 .u-btn-1 {
     margin-top: 35px;
   }
-}@font-face {
-  font-family: 'FontsFree-Net-Astronout';
+}
+@font-face {
+  font-family: "FontsFree-Net-Astronout";
   font-style: normal;
   font-weight: 400;
   src: url(assets/fonts/FontsFree-Net-Astronout.ttf);
