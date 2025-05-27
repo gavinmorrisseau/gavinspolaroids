@@ -1,0 +1,1847 @@
+{% load static %}
+
+<!doctype html>
+<html style="font-size: 16px" lang="en-CA">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/e4a0c19f7d.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="INTUITIVE" />
+    <meta name="description" content="" />
+    <meta name="page_type" content="np-template-header-footer-from-plugin" />
+    <title>gallery / gp</title>
+    <link href="{% static 'gp_web/gallery.css' %}" rel="stylesheet">
+    <link href="{% static 'gp_web/nicepage.css' %}" rel="stylesheet" media="screen">
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="nicepage.js"
+      defer=""
+    ></script>
+    <meta name="generator" content="Nicepage 3.20.4, nicepage.com" />
+    <link rel="icon" href="{% static 'gp_web/favicon.png' %}"/>
+
+    <link
+      id="u-theme-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "gavinspolaroids",
+        "logo": "assets/graphics/logoGIF1Loop.gif"
+      }
+    </script>
+    <meta name="theme-color" content="#478ac9" />
+    <meta property="og:title" content="gallery / gp" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="u-body u-overlap">
+    <header
+      class="u-clearfix u-custom-color-29 u-header u-header"
+      id="sec-c198"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a
+          href="{% url 'index' %}"
+          data-page-id="56688664"
+          class="u-image u-logo u-image-1"
+          data-image-width="600"
+          data-image-height="728"
+          title="Home"
+        >
+          <img
+            src="assets/graphics/logoGIF1Loop.gif"
+            class="u-logo-image u-logo-image-1"
+            data-image-width="95"
+          />
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div
+            class="menu-collapse"
+            style="font-size: 1rem; letter-spacing: 0px; font-weight: 500"
+          >
+            <a
+              class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-custom-color-1 u-text-hover-palette-2-base"
+              href="#"
+            >
+              <svg>
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#menu-hamburger"
+                ></use>
+              </svg>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <symbol
+                    id="menu-hamburger"
+                    viewBox="0 0 16 16"
+                    style="width: 16px; height: 16px"
+                  >
+                    <rect y="1" width="16" height="2"></rect>
+                    <rect y="7" width="16" height="2"></rect>
+                    <rect y="13" width="16" height="2"></rect>
+                  </symbol>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+              <li class="u-nav-item">
+                <a
+                  class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                  href="{% url 'index' %}"
+                  style="padding: 10px 12px"
+                  >home</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                  href="{% url 'gallery' %}"
+                  style="padding: 10px 12px"
+                  >gallery</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                  href="{% url 'about' %}"
+                  style="padding: 10px 12px"
+                  >about me</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                  href="{% url 'contact' %}"
+                  style="padding: 10px 12px"
+                  >contact me</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div
+              class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav"
+            >
+              <div class="u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul
+                  class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"
+                >
+                  <li class="u-nav-item">
+                    <a
+                      class="u-button-style u-nav-link"
+                      href="{% url 'index' %}"
+                      style="padding: 10px 12px"
+                      >home</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a
+                      class="u-button-style u-nav-link"
+                      href="{% url 'gallery' %}"
+                      style="padding: 10px 12px"
+                      >gallery</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a
+                      class="u-button-style u-nav-link"
+                      href="{% url 'about' %}"
+                      style="padding: 10px 12px"
+                      >about me</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a
+                      class="u-button-style u-nav-link"
+                      href="{% url 'contact' %}"
+                      style="padding: 10px 12px"
+                      >contact me</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="u-align-center u-clearfix u-section-1" id="sec-b6dc">
+      <div class="u-align-left u-clearfix u-sheet u-sheet-1">
+        <p
+          class="u-custom-font u-hidden-md u-hidden-xs u-text u-text-custom-color-34 u-text-1"
+        >
+          gavin'spolaroids
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-13 u-section-2" id="sec-77fe">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1"
+          ><svg
+            class="u-svg-link"
+            preserveAspectRatio="xMidYMin slice"
+            viewBox="0 0 42 42"
+            style=""
+          >
+            <use
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xlink:href="#svg-30df"
+            ></use></svg
+          ><svg
+            class="u-svg-content"
+            viewBox="0 0 42 42"
+            x="0px"
+            y="0px"
+            id="svg-30df"
+            style="enable-background: new 0 0 42 42"
+          >
+            <line
+              style="
+                fill: none;
+                stroke: #ed8a19;
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+              "
+              x1="42"
+              y1="21"
+              x2="0"
+              y2="21"
+            ></line></svg
+        ></span>
+        <h3
+          class="u-align-center u-text u-text-custom-color-18 u-text-default-xl u-text-1"
+        >
+          <b>Sorted by Most Recent as Collections</b> <br />Best Viewed on a
+          Desktop
+        </h3>
+        <span class="u-icon u-icon-circle u-text-palette-1-base u-icon-2"
+          ><svg
+            class="u-svg-link"
+            preserveAspectRatio="xMidYMin slice"
+            viewBox="0 0 42 42"
+            style=""
+          >
+            <use
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xlink:href="#svg-0888"
+            ></use></svg
+          ><svg
+            class="u-svg-content"
+            viewBox="0 0 42 42"
+            x="0px"
+            y="0px"
+            id="svg-0888"
+            style="enable-background: new 0 0 42 42"
+          >
+            <line
+              style="
+                fill: none;
+                stroke: #ed8a19;
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+              "
+              x1="42"
+              y1="21"
+              x2="0"
+              y2="21"
+            ></line></svg
+        ></span>
+      </div>
+    </section>
+    <section
+      class="u-clearfix u-custom-color-19 u-section-3"
+      id="carousel_f078"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-text u-title u-text-1">vaacation</h1>
+        <div class="u-layout-horizontal u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <a
+              class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+              href="#"
+              role="button"
+            >
+              <span aria-hidden="true">
+                <svg viewBox="0 0 451.847 451.847">
+                  <path
+                    d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="sr-only">
+                <svg viewBox="0 0 451.847 451.847">
+                  <path
+                    d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+            <a
+              class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+              href="#"
+              role="button"
+            >
+              <span aria-hidden="true">
+                <svg viewBox="0 0 451.846 451.847">
+                  <path
+                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="sr-only">
+                <svg viewBox="0 0 451.846 451.847">
+                  <path
+                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xs u-layout-horizontal u-list u-list-2"
+        >
+          <div class="u-repeater u-repeater-2">
+            <a
+              class="u-absolute-vcenter-lg u-absolute-vcenter-md u-absolute-vcenter-sm u-absolute-vcenter-xl u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-3"
+              href="#"
+              role="button"
+            >
+              <span aria-hidden="true">
+                <svg viewBox="0 0 451.847 451.847">
+                  <path
+                    d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="sr-only">
+                <svg viewBox="0 0 451.847 451.847">
+                  <path
+                    d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+            <a
+              class="u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-4"
+              href="#"
+              role="button"
+            >
+              <span aria-hidden="true">
+                <svg viewBox="0 0 451.846 451.847">
+                  <path
+                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="sr-only">
+                <svg viewBox="0 0 451.846 451.847">
+                  <path
+                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="u-expanded-width-lg u-expanded-width-xl u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-gallery-1"
+        >
+          <div class="u-gallery-inner">
+            <div class="u-effect-fade u-gallery-item u-gallery-item-1">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image"
+                  src="assets/images/80D57613-2F8D-410B-953D-8032AFA38E40.jpeg"
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-1">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image"
+                  src="assets/images/68288C96-CF9D-451E-811B-55316B36C8BD.jpeg"
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-2">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-3">
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image"
+                  src="assets/images/88380D34-0F1E-46CB-BCFD-B63B6D2928E4.jpeg"
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-3">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-4">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image"
+                  src="assets/images/741F7D7F-2E53-4198-A566-F6CE772A90B2.jpeg"
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-4">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div
+              class="u-effect-fade u-gallery-item u-gallery-item-5"
+              data-image-width="1317"
+              data-image-height="1600"
+            >
+              <div class="u-back-slide">
+                <img
+                  class="u-back-image"
+                  src="assets/images/3022689E-66A0-48F7-A8B3-3E963392B105.jpeg"
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-5">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="u-absolute-vcenter-lg u-absolute-vcenter-xl u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-5"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a
+            class="u-absolute-vcenter-xl u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-6"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="u-align-center u-clearfix u-custom-color-8 u-section-4"
+      id="sec-3ddc"
+    >
+      <div class="u-clearfix u-sheet u-valign-top-lg u-valign-top-xl u-sheet-1">
+        <h1 class="u-custom-font u-text u-title u-text-1">discovery</h1>
+        <div
+          class="u-expanded-width-xl u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-gallery-1"
+          id="carousel-25ba"
+        >
+          <div class="u-gallery-inner u-gallery-inner-1" role="listbox">
+            <div class="u-effect-fade u-gallery-item u-gallery-item-1">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-1"
+                  src="assets/images/070EEF97-84C7-4252-8443-7F7579A83A6E.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-1"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-2"
+                  src="assets/images/F4AA7DA9-4BB9-4D3D-AC94-A6F699A93965.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-2"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-3">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-3"
+                  src="assets/images/966E0AFE-1AD1-402F-9444-D2829370F74D.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-3"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-4">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-4"
+                  src="assets/images/88F1E327-DA88-45CD-87DA-72B53724F179.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-4"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-5">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-5"
+                  src="assets/images/28493B2F-AFAC-45AA-A81B-0A1F22E495E3.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-5"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-6">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-6"
+                  src="assets/images/CFD9C36F-2F66-4FF2-BF98-210EB6272B31.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-6"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a
+            class="u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-9 u-section-5" id="sec-1547">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-layout-horizontal u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <a
+              class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+              href="#"
+              role="button"
+            >
+              <span aria-hidden="true">
+                <svg viewBox="0 0 451.847 451.847">
+                  <path
+                    d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="sr-only">
+                <svg viewBox="0 0 451.847 451.847">
+                  <path
+                    d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+            <a
+              class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+              href="#"
+              role="button"
+            >
+              <span aria-hidden="true">
+                <svg viewBox="0 0 451.846 451.847">
+                  <path
+                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="sr-only">
+                <svg viewBox="0 0 451.846 451.847">
+                  <path
+                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <h1 class="u-custom-font u-text u-title u-text-1">nature break</h1>
+        <div
+          class="u-expanded-width-xl u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-gallery-1"
+          id="carousel-25ba"
+        >
+          <div class="u-gallery-inner u-gallery-inner-1" role="listbox">
+            <div class="u-effect-fade u-gallery-item u-gallery-item-1">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-1"
+                  src="assets/images/F930DC28-C745-4EE4-A63B-2476735C7F41.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-1"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-2"
+                  src="assets/images/41ED0A66-FB26-44ED-A9EF-CDAA13C65A5A.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-2"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-3">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-3"
+                  src="assets/images/g.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-3"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-4">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-4"
+                  src="assets/images/486340C1-4525-478C-86A2-18516C95F5D8.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-4"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-5">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-5"
+                  src="assets/images/BD09E144-8E11-4B80-9030-45E071F9B258.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-5"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="u-absolute-vcenter-lg u-absolute-vcenter-xl u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-3"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a
+            class="u-absolute-vcenter-xl u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-4"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="u-clearfix u-custom-color-1 u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xs u-section-6"
+      id="carousel_9081"
+    >
+      <div
+        class="u-expanded-height-lg u-expanded-height-md u-expanded-height-sm u-expanded-height-xs u-shape u-shape-svg u-text-custom-color-11 u-shape-1"
+      >
+        <svg
+          class="u-svg-link"
+          preserveAspectRatio="none"
+          viewBox="0 0 160 160"
+          style=""
+        >
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#svg-36c2"
+          ></use>
+        </svg>
+        <svg
+          class="u-svg-content"
+          viewBox="0 0 160 160"
+          x="0px"
+          y="0px"
+          id="svg-36c2"
+        >
+          <path d="M160,0v160H0V0H160z"></path>
+        </svg>
+      </div>
+      <div
+        class="u-expanded-height-lg u-expanded-height-md u-expanded-height-sm u-expanded-height-xs u-shape u-shape-svg u-text-custom-color-10 u-shape-2"
+      >
+        <svg
+          class="u-svg-link"
+          preserveAspectRatio="none"
+          viewBox="0 0 160 160"
+          style=""
+        >
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#svg-9ae6"
+          ></use>
+        </svg>
+        <svg
+          class="u-svg-content"
+          viewBox="0 0 160 160"
+          x="0px"
+          y="0px"
+          id="svg-9ae6"
+        >
+          <path d="M160,0v160H0V0H160z"></path>
+        </svg>
+      </div>
+      <div class="u-layout-horizontal u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <a
+            class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a
+            class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="u-expanded-height-lg u-expanded-height-md u-expanded-height-sm u-expanded-height-xs u-shape u-shape-svg u-text-custom-color-12 u-shape-3"
+      >
+        <svg
+          class="u-svg-link"
+          preserveAspectRatio="none"
+          viewBox="0 0 160 160"
+          style=""
+        >
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#svg-0421"
+          ></use>
+        </svg>
+        <svg
+          class="u-svg-content"
+          viewBox="0 0 160 160"
+          x="0px"
+          y="0px"
+          id="svg-0421"
+        >
+          <path d="M160,0v160H0V0H160z"></path>
+        </svg>
+      </div>
+      <div class="u-layout-horizontal u-list u-list-2">
+        <div class="u-repeater u-repeater-2">
+          <a
+            class="u-absolute-vcenter-lg u-absolute-vcenter-xl u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-3"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a
+            class="u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-4"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <h1 class="u-custom-font u-text u-title u-text-1">family</h1>
+      <div
+        class="u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-gallery-1"
+      >
+        <div class="u-gallery-inner">
+          <div class="u-effect-fade u-gallery-item u-gallery-item-1">
+            <div
+              class="u-back-slide"
+              data-image-width="1317"
+              data-image-height="1600"
+            >
+              <img
+                class="u-back-image"
+                src="assets/images/89556A63-7CD1-4093-B180-9111DE39EEED.jpeg"
+              />
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-1">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+            <div
+              class="u-back-slide"
+              data-image-width="1317"
+              data-image-height="1600"
+            >
+              <img
+                class="u-back-image"
+                src="assets/images/33CDB425-F5AA-4BDB-BBBD-123E1C7B3A45.jpeg"
+              />
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-2">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item u-gallery-item-3">
+            <div
+              class="u-back-slide"
+              data-image-width="1317"
+              data-image-height="1600"
+            >
+              <img
+                class="u-back-image"
+                src="assets/images/64B1EACE-D0AD-4257-B214-1197F82FC6C3.jpeg"
+              />
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-3">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-5"
+          href="#"
+          role="button"
+        >
+          <span aria-hidden="true">
+            <svg viewBox="0 0 451.847 451.847">
+              <path
+                d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+              ></path>
+            </svg>
+          </span>
+          <span class="sr-only">
+            <svg viewBox="0 0 451.847 451.847">
+              <path
+                d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+              ></path>
+            </svg>
+          </span>
+        </a>
+        <a
+          class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-6"
+          href="#"
+          role="button"
+        >
+          <span aria-hidden="true">
+            <svg viewBox="0 0 451.846 451.847">
+              <path
+                d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+              ></path>
+            </svg>
+          </span>
+          <span class="sr-only">
+            <svg viewBox="0 0 451.846 451.847">
+              <path
+                d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+              ></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </section>
+    <section
+      class="u-align-center u-clearfix u-custom-color-17 u-section-7"
+      id="carousel_b543"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-text u-title u-text-1">valleyfair</h1>
+        <div
+          class="u-expanded-width-xl u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-gallery-1"
+          id="carousel-25ba"
+        >
+          <div class="u-gallery-inner u-gallery-inner-1" role="listbox">
+            <div class="u-effect-fade u-gallery-item u-gallery-item-1">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-1"
+                  src="assets/images/7C835A19-ED26-4F0C-A441-EE94AE916202.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-1"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-2"
+                  src="assets/images/3F955095-A35A-4674-9243-2596407515EC.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-2"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-3">
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-3"
+                  src="assets/images/E6C5C4B5-F6ED-4DC1-8E32-2B2720DF0AB1.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-3"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-4">
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-4"
+                  src="assets/images/23E1C609-26D5-47FB-8509-9899AC2B9FAD1.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-4"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-5">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-5"
+                  src="assets/images/AA217911-D62B-4AEA-A20F-0C8A1EC98429.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-5"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-6">
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-6"
+                  src="assets/images/31CA6A4E-DB21-4DB7-95D6-9451D9182FB4.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-6"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div
+              class="u-effect-fade u-gallery-item u-gallery-item-7"
+              data-image-width="1317"
+              data-image-height="1600"
+            >
+              <div class="u-back-slide">
+                <img
+                  class="u-back-image u-back-image-7"
+                  src="assets/images/DF9DA73D-9944-40F4-91C6-4BBC0D929A6C.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-7"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div
+              class="u-effect-fade u-gallery-item u-gallery-item-8"
+              data-image-width="1316"
+              data-image-height="1600"
+            >
+              <div class="u-back-slide">
+                <img
+                  class="u-back-image u-back-image-8"
+                  src="assets/images/8EE9ECAE-8E03-498C-A2A1-ED7078A5923F.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-8"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div
+              class="u-effect-fade u-gallery-item u-gallery-item-9"
+              data-image-width="1316"
+              data-image-height="1600"
+            >
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-9"
+                  src="assets/images/704EC6C8-1828-4F43-909F-6FC4FBAEB3B4.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-9"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a
+            class="u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="u-clearfix u-custom-color-16 u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xs u-section-8"
+      id="carousel_c2d0"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-layout-horizontal u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <a
+              class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+              href="#"
+              role="button"
+            >
+              <span aria-hidden="true">
+                <svg viewBox="0 0 451.847 451.847">
+                  <path
+                    d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="sr-only">
+                <svg viewBox="0 0 451.847 451.847">
+                  <path
+                    d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+            <a
+              class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+              href="#"
+              role="button"
+            >
+              <span aria-hidden="true">
+                <svg viewBox="0 0 451.846 451.847">
+                  <path
+                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="sr-only">
+                <svg viewBox="0 0 451.846 451.847">
+                  <path
+                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <h1 class="u-custom-font u-text u-title u-text-1">
+          they were closed :(
+        </h1>
+        <div
+          class="u-gallery u-hidden-lg u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-gallery-1"
+        >
+          <div class="u-gallery-inner">
+            <div class="u-effect-fade u-gallery-item u-gallery-item-1">
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image"
+                  src="assets/images/2C38E7F3-7ACA-4D73-9DA6-EDAA139BAE44.jpeg"
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-1">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image"
+                  src="assets/images/D118EFE0-14BF-4AFB-95AD-41D113394A7F.jpeg"
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-2">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-3">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image"
+                  src=""
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-3">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div
+          class="u-gallery u-hidden-lg u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-gallery-2"
+        >
+          <div class="u-gallery-inner">
+            <div class="u-effect-fade u-gallery-item u-gallery-item-4">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image"
+                  src="assets/graphics/transparent_375x455.png"
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-4">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-5">
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image"
+                  src="assets/images/CF8F4E75-6C15-423E-B653-210B800A7BBA.jpeg"
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-5">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+              <div
+                class="u-back-slide"
+                data-image-width="1316"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image"
+                  src="assets/images/BB257B0C-9B21-4611-AF3C-BC013FAD7EE7.jpeg"
+                />
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-6">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="u-clearfix u-custom-color-15 u-section-9"
+      id="carousel_392a"
+    >
+      <div class="u-clearfix u-sheet u-valign-middle-md u-sheet-1">
+        <div class="u-layout-horizontal u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <a
+              class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+              href="#"
+              role="button"
+            >
+              <span aria-hidden="true">
+                <svg viewBox="0 0 451.847 451.847">
+                  <path
+                    d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="sr-only">
+                <svg viewBox="0 0 451.847 451.847">
+                  <path
+                    d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+            <a
+              class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+              href="#"
+              role="button"
+            >
+              <span aria-hidden="true">
+                <svg viewBox="0 0 451.846 451.847">
+                  <path
+                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="sr-only">
+                <svg viewBox="0 0 451.846 451.847">
+                  <path
+                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <h1 class="u-custom-font u-text u-title u-text-1">long way home</h1>
+        <div
+          class="u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-gallery-1"
+          id="carousel-25ba"
+        >
+          <div class="u-gallery-inner u-gallery-inner-1" role="listbox">
+            <div class="u-effect-fade u-gallery-item u-gallery-item-1">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-1"
+                  src="assets/images/ABE03486-1F36-4360-8618-C7DBD3994D3F.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-1"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-2"
+                  src="assets/images/1827C58B-F539-4032-BF27-84D251755E1B.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-2"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-3">
+              <div
+                class="u-back-slide"
+                data-image-width="1317"
+                data-image-height="1600"
+              >
+                <img
+                  class="u-back-image u-back-image-3"
+                  src="assets/images/59812361-718A-4984-9270-2D231C9F9101.jpeg"
+                />
+              </div>
+              <div
+                class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-3"
+              >
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="u-absolute-vcenter-lg u-absolute-vcenter-xl u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-3"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847">
+                <path
+                  d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a
+            class="u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-4"
+            href="#"
+            role="button"
+          >
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847">
+                <path
+                  d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="u-clearfix u-custom-color-1 u-text-custom-color-20 u-section-10"
+      id="sec-3eff"
+    ></section>
+
+    <footer
+      class="u-align-center u-clearfix u-custom-color-1 u-footer u-footer"
+      id="sec-ae31"
+    >
+      <div
+        class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1"
+      >
+        <p class="u-small-text u-text u-text-variant u-text-1">
+          <b
+            >©gavinspolaroids,
+            <script>
+              document.write(/\d{4}/.exec(Date())[0]);
+            </script></b
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
