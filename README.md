@@ -1,4 +1,4 @@
-# gavinspolaroids.github.io
+# gavinspolaroids.ca
 
 Instant / film photography website "gavinspolaroids.ca"  
 Hosted at: https://www.gavinspolaroids.ca/
