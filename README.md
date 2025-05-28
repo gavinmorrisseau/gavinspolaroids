@@ -6,5 +6,5 @@ Hosted at: https://www.gavinspolaroids.ca/
 Contact: gavin@morrisseau.ca
 
 Website Preview:
-![image](homepage_preview.png)
+![image](assets/docs/homepage_preview.png)
 Template created by: NicePage @ https://www.nicepage.com
