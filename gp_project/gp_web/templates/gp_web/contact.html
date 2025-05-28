@@ -12,27 +12,21 @@
     <title>contact me / gp</title>
     <link href="{% static 'gp_web/contact.css' %}" rel="stylesheet">
     <link href="{% static 'gp_web/nicepage.css' %}" rel="stylesheet" media="screen">
-    <script class="u-script" type="text/javascript" src="{% static 'jquery.js'%}" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{% static 'nicepage.js'%}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'gp_web/jquery.js'%}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'gp_web/nicepage.js'%}" defer=""></script>
     <meta name="generator" content="Nicepage 3.20.4, nicepage.com">
-    <link rel="icon" href="assets/graphics/favicon.png">
+    <link rel="icon" href="{% static 'gp_web/favicon.png' %}">
     
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "gavinspolaroids",
-		"logo": "assets/graphics/logoGIF1Loop.gif"
-}</script>
+  
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="contact me / gp">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-overlap"><header class="u-clearfix u-custom-color-29 u-header u-header" id="sec-c198"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="index.html" data-page-id="56688664" class="u-image u-logo u-image-1" data-image-width="600" data-image-height="728" title="Home">
-          <img src="assets/graphics/logoGIF1Loop.gif" class="u-logo-image u-logo-image-1" data-image-width="95">
+        <a href="{% url 'index' %}" data-page-id="56688664" class="u-image u-logo u-image-1" data-image-width="600" data-image-height="728" title="Home">
+          <img src="{% static 'gp_web/logoGIF1Loop.gif' %}" class="u-logo-image u-logo-image-1" data-image-width="95">
         </a>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 500;">
@@ -44,20 +38,20 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="index.html" style="padding: 10px 12px;">home</a>
-</li><li class="u-nav-item"><a class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="gallery.html" style="padding: 10px 12px;">gallery</a>
-</li><li class="u-nav-item"><a class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="about-me.html" style="padding: 10px 12px;">about me</a>
-</li><li class="u-nav-item"><a class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="contact-me.html" style="padding: 10px 12px;">contact me</a>
+            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'index' %}" style="padding: 10px 12px;">home</a>
+</li><li class="u-nav-item"><a class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'gallery' %}" style="padding: 10px 12px;">gallery</a>
+</li><li class="u-nav-item"><a class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'about' %}" style="padding: 10px 12px;">about me</a>
+</li><li class="u-nav-item"><a class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'contact' %}" style="padding: 10px 12px;">contact me</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html" style="padding: 10px 12px;">home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="gallery.html" style="padding: 10px 12px;">gallery</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="about-me.html" style="padding: 10px 12px;">about me</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="contact-me.html" style="padding: 10px 12px;">contact me</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'index' %}" style="padding: 10px 12px;">home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'gallery' %}" style="padding: 10px 12px;">gallery</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'about' %}" style="padding: 10px 12px;">about me</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'contact' %}" style="padding: 10px 12px;">contact me</a>
 </li></ul>
               </div>
             </div>
@@ -77,7 +71,7 @@
             <div class="u-layout-row">
               <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-23 u-layout-cell-1">
                 <div class="u-border-4 u-border-custom-color-1 u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-1">
-                  <div alt="" class="u-image u-image-circle u-image-1" src="" data-image-width="1439" data-image-height="1491"></div>
+                  <div alt="headshot" class="u-image u-image-circle u-image-1" src="{% static 'gp_web/GAVIN1CROPPED.png' %}" data-image-width="1439" data-image-height="1491"></div>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-custom-color-1 u-layout-cell u-right-cell u-size-37 u-layout-cell-2">
@@ -89,7 +83,6 @@
                     <br><a href="https://www.github.com/gavinmorrisseau" target="_blank"><i class="fa-brands fa-github"></i> /gavinmorrisseau</a>
                     <br><a href="https://www.instagram.com/gavinspolaroids" target="_blank"><i class="fa-brands fa-instagram"></i> @gavinspolaroids</a>
                     <br><a href="https://www.instagram.com/gavinmorrisseau" target="_blank"><i class="fa-brands fa-instagram"></i> @gavinmorrisseau&nbsp;</a>
-
                   </p>
                 </div>
               </div>
@@ -97,25 +90,25 @@
           </div>
         </div>
         <div class="u-expanded-width-xl u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
-          <div class="u-gallery-inner"><div class="u-effect-fade u-gallery-item u-gallery-item-1"><div class="u-back-slide" data-image-width="1317" data-image-height="1600"><img class="u-back-image" src="assets/images/e.jpeg">
+          <div class="u-gallery-inner"><div class="u-effect-fade u-gallery-item u-gallery-item-1"><div class="u-back-slide" data-image-width="1317" data-image-height="1600"><img class="u-back-image" src="{% static 'gp_web/e.jpeg' %}">
 </div><div class="u-over-slide u-shading u-over-slide-1"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
 </div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-2"><div class="u-back-slide" data-image-width="1317" data-image-height="1600"><img class="u-back-image" src="assets/images/f.jpeg">
+</div><div class="u-effect-fade u-gallery-item u-gallery-item-2"><div class="u-back-slide" data-image-width="1317" data-image-height="1600"><img class="u-back-image" src="{% static 'gp_web/f.jpeg' %}">
 </div><div class="u-over-slide u-shading u-over-slide-2"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
 </div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-3"><div class="u-back-slide" data-image-width="1317" data-image-height="1600"><img class="u-back-image" src="assets/images/a.jpeg">
+</div><div class="u-effect-fade u-gallery-item u-gallery-item-3"><div class="u-back-slide" data-image-width="1317" data-image-height="1600"><img class="u-back-image" src="{% static 'gp_web/a.jpeg' %}">
 </div><div class="u-over-slide u-shading u-over-slide-3"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
 </div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-4" data-image-width="1317" data-image-height="1600"><div class="u-back-slide" data-image-width="1317" data-image-height="1600"><img class="u-back-image" src="assets/images/b.jpeg">
+</div><div class="u-effect-fade u-gallery-item u-gallery-item-4" data-image-width="1317" data-image-height="1600"><div class="u-back-slide" data-image-width="1317" data-image-height="1600"><img class="u-back-image" src="{% static 'gp_web/b.jpeg' %}">
 </div><div class="u-over-slide u-shading u-over-slide-4"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
 </div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-5" data-image-width="1317" data-image-height="1600"><div class="u-back-slide" data-image-width="1317" data-image-height="1600"><img class="u-back-image" src="assets/images/d.jpeg">
+</div><div class="u-effect-fade u-gallery-item u-gallery-item-5" data-image-width="1317" data-image-height="1600"><div class="u-back-slide" data-image-width="1317" data-image-height="1600"><img class="u-back-image" src="{% static 'gp_web/d.jpeg' %}">
 </div><div class="u-over-slide u-shading u-over-slide-5"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
 </div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-6" data-image-width="1853" data-image-height="2252"><div class="u-back-slide"><img class="u-back-image" src="assets/images/g.jpeg">
+</div><div class="u-effect-fade u-gallery-item u-gallery-item-6" data-image-width="1853" data-image-height="2252"><div class="u-back-slide"><img class="u-back-image" src="{% static 'gp_web/g.jpeg' %}">
 </div><div class="u-over-slide u-shading u-over-slide-6"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
 </div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-7" data-image-width="1317" data-image-height="1600"><div class="u-back-slide"><img class="u-back-image" src="assets/images/g.jpeg">
+</div><div class="u-effect-fade u-gallery-item u-gallery-item-7" data-image-width="1317" data-image-height="1600"><div class="u-back-slide"><img class="u-back-image" src="{% static 'gp_web/g.jpeg' %}">
 </div><div class="u-over-slide u-shading u-over-slide-7"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
 </div>
 </div></div>
@@ -144,7 +137,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
             </span>
           </a>
         </div>
-        <a href="gallery.html" data-page-id="95704810" class="u-border-none u-btn u-button-style u-custom-color-4 u-btn-1">view the gallery</a>
+        <a href="{link 'gallery'}" data-page-id="95704810" class="u-border-none u-btn u-button-style u-custom-color-4 u-btn-1">view the gallery</a>
       </div>
     </section>
   </body>

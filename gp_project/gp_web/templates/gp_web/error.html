@@ -18,17 +18,17 @@
     <script
       class="u-script"
       type="text/javascript"
-      src="jquery.js"
+      src="{% static 'gp_web/jquery.js' %}"
       defer=""
     ></script>
     <script
       class="u-script"
       type="text/javascript"
-      src="nicepage.js"
+      src="{% static 'gp_web/nicepage.js' %}"
       defer=""
     ></script>
     <meta name="generator" content="Nicepage 3.20.4, nicepage.com" />
-    <link rel="icon" href="assets/graphics/favicon.png" />
+    <link rel="icon" href="{% static 'gp_web/favicon.png' %}" />
 
     <link
       id="u-theme-google-font"
@@ -56,7 +56,7 @@
     >
       <div class="u-clearfix u-sheet u-sheet-1">
         <a
-          href="index.html"
+          href="{% url 'index'}"
           data-page-id="56688664"
           class="u-image u-logo u-image-1"
           data-image-width="600"
@@ -64,7 +64,7 @@
           title="Home"
         >
           <img
-            src="assets/graphics/logoGIF1Loop.gif"
+            src="{% static 'gp_web/logoGIF1Loop.gif' %}"
             class="u-logo-image u-logo-image-1"
             data-image-width="95"
           />
@@ -108,7 +108,7 @@
               <li class="u-nav-item">
                 <a
                   class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
-                  href="index.html"
+                  href="{% url 'index' %}"
                   style="padding: 10px 12px"
                   >home</a
                 >
@@ -116,7 +116,7 @@
               <li class="u-nav-item">
                 <a
                   class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
-                  href="gallery.html"
+                  href="{% url 'gallery' %}"
                   style="padding: 10px 12px"
                   >gallery</a
                 >
@@ -124,7 +124,7 @@
               <li class="u-nav-item">
                 <a
                   class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
-                  href="about-me.html"
+                  href="{% url 'about' %}"
                   style="padding: 10px 12px"
                   >about me</a
                 >
@@ -132,7 +132,7 @@
               <li class="u-nav-item">
                 <a
                   class="u-active-grey-5 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
-                  href="contact-me.html"
+                  href="{% url 'contact' %}"
                   style="padding: 10px 12px"
                   >contact me</a
                 >
@@ -151,7 +151,7 @@
                   <li class="u-nav-item">
                     <a
                       class="u-button-style u-nav-link"
-                      href="index.html"
+                      href="{% url 'index' %}"
                       style="padding: 10px 12px"
                       >home</a
                     >
@@ -159,7 +159,7 @@
                   <li class="u-nav-item">
                     <a
                       class="u-button-style u-nav-link"
-                      href="gallery.html"
+                      href="{% url 'gallery' %}"
                       style="padding: 10px 12px"
                       >gallery</a
                     >
@@ -167,7 +167,7 @@
                   <li class="u-nav-item">
                     <a
                       class="u-button-style u-nav-link"
-                      href="about-me.html"
+                      href="{% url 'about' %}"
                       style="padding: 10px 12px"
                       >about me</a
                     >
@@ -175,7 +175,7 @@
                   <li class="u-nav-item">
                     <a
                       class="u-button-style u-nav-link"
-                      href="contact-me.html"
+                      href="{% url 'contact' %}"
                       style="padding: 10px 12px"
                       >contact me</a
                     >
